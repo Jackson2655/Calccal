@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-9dp"
+    tools:layout_editor_absoluteY="49dp">
+
+    <Button
+        android:id="@+id/dn3"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="dn3"
+        app:layout_constraintStart_toEndOf="@+id/dn2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/belok2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="belok2"
+        android:textSize="12pt"
+        app:layout_constraintStart_toEndOf="@+id/ccalobsh"
+        app:layout_constraintTop_toBottomOf="@+id/dn3"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <Button
+        android:id="@+id/dn1"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="dn1"
+        app:layout_constraintStart_toEndOf="@+id/dn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dn6"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="dn6"
+        app:layout_constraintStart_toEndOf="@+id/dn5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dn5"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="dn5"
+        app:layout_constraintStart_toEndOf="@+id/dn4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ccalobsh"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="ccalobsh"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dn1"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <Button
+        android:id="@+id/dn4"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="dn4"
+        app:layout_constraintStart_toEndOf="@+id/dn3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="dn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ugli2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="ugli2"
+        android:textSize="12pt"
+        app:layout_constraintStart_toEndOf="@+id/jir2"
+        app:layout_constraintTop_toBottomOf="@+id/dn6"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/jir2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="jir2"
+        android:textSize="12pt"
+        app:layout_constraintStart_toEndOf="@+id/belok2"
+        app:layout_constraintTop_toBottomOf="@+id/dn3"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <Button
+        android:id="@+id/dn2"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="dn2"
+        app:layout_constraintStart_toEndOf="@+id/dn1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="h"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
