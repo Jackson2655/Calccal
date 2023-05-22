@@ -9,33 +9,46 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-
+    FloatingActionButton btn;
     private RecyclerView recview;
     private ArrayList<weeks> weeks = new ArrayList<weeks>();
-
+    final String ATTRIBUTE_NAME_TEXT = "text";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initializeData();
+
         recview = findViewById(R.id.recview);
         weeksAdapter weeksadapter = new weeksAdapter(this, weeks);
-        recview.setLayoutManager(new LinearLayoutManager(this));
+        recview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recview.setAdapter(weeksadapter);
+        btn = (FloatingActionButton) findViewById(R.id.Btn);
+        initializeData();
     }
     private void initializeData() {
         weeks.add(new weeks(1));
         weeks.add(new weeks(2));
         weeks.add(new weeks(3));
-        weeks.add(new weeks(4));
-        weeks.add(new weeks(5));
-        weeks.add(new weeks(6));
-        weeks.add(new weeks(7));
+
+        btn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                btn.setOnClickListener(this);
+                weeks.add(new weeks(weeks.size() + 1));
+                recview.getAdapter().notifyItemInserted(weeks.size() - 1);
+            }
+        });
 
     }
+
+
 }
